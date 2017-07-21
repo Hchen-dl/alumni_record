@@ -1,0 +1,2 @@
+android studio create process error=216
+菜单 File-->Other Settings-->Default Project Structure, 在此对话框中清除 Use Embedded JDK 选项，选择自己安装的JDK即可。若修改后遇到以下错误：
