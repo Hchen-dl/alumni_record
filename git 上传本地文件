@@ -15,10 +15,23 @@ fatal: The remote end hung up unexpectedly
 error: RPC failed; curl 56 SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
 Everything up-to-date
 
-解决方案：
+尝试：
  git config --global http.postBuffer 1524288000
 引"I was running into a very similar issue, though I was deploying to an Azure Web App via a git push. I received this error:
 
 RPC failed; curl 56 SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
 The remote end hung up unexpectedly
 The solution for me was to change my deployment environment from a Macbook to a Windows desktop. See this answer for full details."
+
+结果：没用！！！
+
+
+后换用小的库，还是同样结果
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+error: RPC failed; curl 55 SSL_write() returned SYSCALL, errno = 10053
+尝试：
+引“遇到类似问题，发现真是网络问题导致的。
+我的解决办法是：
+
+$ http_proxy="" https_proxy="" git push origin master”
