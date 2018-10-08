@@ -16,4 +16,9 @@ error: RPC failed; curl 56 SSL read: error:00000000:lib(0):func(0):reason(0), er
 Everything up-to-date
 
 解决方案：
- git remote add origin git@github.com:Hchen-dl/MachineVision.git
+ git config --global http.postBuffer 1524288000
+引"I was running into a very similar issue, though I was deploying to an Azure Web App via a git push. I received this error:
+
+RPC failed; curl 56 SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
+The remote end hung up unexpectedly
+The solution for me was to change my deployment environment from a Macbook to a Windows desktop. See this answer for full details."
