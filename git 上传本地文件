@@ -35,3 +35,9 @@ error: RPC failed; curl 55 SSL_write() returned SYSCALL, errno = 10053
 我的解决办法是：
 
 $ http_proxy="" https_proxy="" git push origin master”
+
+尝试：
+“git config http.sslVerify "false"”，
+
+git config http.sslVerify "true"
+
