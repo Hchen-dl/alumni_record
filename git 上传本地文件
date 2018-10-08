@@ -8,3 +8,12 @@ ZJU
 3.commit
 4. remote add origin
 5.push -u origin master
+
+后上传出现
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+error: RPC failed; curl 56 SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
+Everything up-to-date
+
+解决方案：
+ git remote add origin git@github.com:Hchen-dl/MachineVision.git
