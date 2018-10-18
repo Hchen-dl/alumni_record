@@ -41,3 +41,6 @@ $ http_proxy="" https_proxy="" git push origin master”
 
 git config http.sslVerify "true"
 
+最终！：env GIT_SSL_NO_VERIFY=true  git push origin master
+成功！
+
